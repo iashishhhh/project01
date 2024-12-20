@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="responsive/resposive.css">
+
+    <!-- ROBOTO FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container-fluid  mt-3 ">
+        <div class="row gap-0 g-5 mx-lg-3">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="card  border colorcard">
+                    <div class="card-wrap pt-2 px-3 py-3 mt-3">
+                        <h5 class="heading">
+                            Select ID Picture Path
+                            <img src="img/gallery.png" class="float-end" alt="">
+                        </h5>
+                        <p class="text-muted muted">(Tip: Upload a compatible file type like Jpg, Jpeg & Png)</p>
+                        <div class="d-flex align-items-center">
+                            <input type="text" id="text" class="form-control me-2 bg-white border-0 py-1 px-2 rounded"
+                                placeholder="D:\Projects\Labview\Logo work\photorealistic.png">
+                            <button class="btnn btn-1 border-0 rounded">
+                                <img src="img/Icon.png" alt="">
+                            </button>
+                        </div>
+
+                        <div class="check">
+                            <input type="checkbox" class="mt-3">
+                            <span class="ms-2 text-muted"> Load last picture when program starts off.</span>
+                        </div>
+                        <h2 class="mt-3">ID Picture</h2>
+                        <img src="img/dog.jpeg" class="w-100 rounded" alt="">
+                    </div>
+                </div>
+                <div class="headbtn bg-transparent "> <button class="btnhead btn-lg w-100 mt-3 rounded">Play</button>
+                </div>
+            </div>
+
+
+            <!--  -->
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="card border-0 colorcard ">
+                    <div class="card-wrap  colorcard pt-2 px-3 py-3 mt-3 rounded">
+                        <h5 class="heading">
+                            Select ID Picture Path
+                            <img src="img/musicnote.png" class="float-end" alt="">
+                        </h5>
+                        <p class="text-muted muted">(Tip: Upload a compatible file type like mp3, AIFF, FLAC)</p>
+
+                        <div class="d-flex align-items-center">
+
+                            <input type="text" id="text" class="form-control me-2 bg-white border-0 py-1 px-2 rounded"
+                                placeholder="D:\Projects\Labview\Logo work\photorealistic.png">
+                            <button class="btnn btn-1 border-0 rounded">
+                                <img src="img/Icon.png" alt="">
+                            </button>
+                        </div>
+
+                        <div class="check">
+                            <input type="checkbox" class="mt-3">
+                            <span class="ms-2 text-muted "> Load last picture when program starts off.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="content mt-3 bg-white">
+                    <h2>Set Up Cluster</h2>
+                </div>
+                <div class="row bg-white" id="inputs">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="row g-3 p-3">
+                            <div class="col-lg-6 col-md-12">
+                                <h6>Select Signal Input Channel</h6>
+                                <select id="country" class="form-select mt-2" style="height: 50px;" required>
+                                    <option value="" selected>-Select-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <h6>Select Lazer Output Channel</h6>
+                                <select id="country" class="form-select mt-2" style="height: 50px;" required>
+                                    <option value="" selected>-Select-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 com-md-12">
+                                <h6>Select Buzzer Output Channel</h6>
+                                <select id="country" class="form-select mt-2" style="height: 50px;" required>
+                                    <option value="" selected>-Select-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <h6>Scan Rate</h6>
+                                <select id="country" class="form-select mt-2" style="height: 50px;" required>
+                                    <option value="" selected>-Select-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <h6>Seconds to Play</h6>
+                                <select id="country" class="form-select mt-2" style="height: 50px;" required>
+                                    <option value="" selected>-Select-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <h6>RAC Positive Threshold</h6>
+                                <select id="country" class="form-select mt-2" style="height: 50px;" required>
+                                    <option value="" selected>-Select-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
+                            <div class="form-check form-switch mx-0 px-2 pt-1">
+                                <label class="form-check-label" for="activateBuzz">Activate Buzz</label>
+                                <input class="form-check-input float-end" type="checkbox" id="activateBuzz"
+                                    style="height: 31px; width: 51px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Trigger Button -->
+                <div class="headbtn2 bg-transparent">
+                    <button type="button" class="btnhead2 btn-lg w-100 mt-1 rounded" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">Load Picture</button>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade w-100" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header border-bottom-0">
+                                <h1 class="modal-title  text-muted border-bottom-0 mx-0 px-0 " id="staticBackdropLabel">
+                                    Picture
+                                    Analysis</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-12">
+                                        <div class="row ">
+                                            <div class="col-lg-6">
+                                                <div class="modal-content border-0 ms-lg-1">
+                                                    <h3 class="text-muted">Current RAC Signals Number</h3>
+                                                    <div data-mdb-input-init class="form-outline">
+                                                        <input type="number" id="typeNumber" class="form-control" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="modal-content border-0 px-0">
+                                                    <h3 class="text-muted">Picture Selector</h3>
+                                                    <div data-mdb-input-init class="form-outline">
+                                                        <input type="number" id="typeNumber" class="form-control" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12">
+                                        <div
+                                            class="btnd mt-2 pt-1 float-end d-flex justify-content-center align-items-center">
+                                            <button
+                                                class="btn-lg btncol px-2 border-0 rounded me-lg-2 d-flex justify-content-center align-items-center">
+                                                <span><img src="img/formkit_start.png" class="mx-2 mb-1" alt=""></span>
+                                                Start Picture Analysis
+                                            </button>
+
+                                            <button
+                                                class="btn-lg px-2 rounded d-flex justify-content-center align-items-center"
+                                                id="btncol2">
+                                                <span><img src="img/material-symbols_stop-outline.png"
+                                                        class="mx-1   mb-1" alt=""></span>
+                                                Stop Picture Analysis
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-9">
+                                        <div class="canvas rounded"></div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="picture-path rounded">
+                                            <div class="card bg-transparent border-0">
+                                                <div class="card-wrapper px-3 mt-3">
+                                                    <h5 class="heading2">
+                                                        Picture Path
+                                                        <img src="img/gallery.png" class="float-end" height="16px"
+                                                            width="16px" alt="">
+                                                    </h5>
+                                                    <p>(Tip: Upload a compatible file type like Jpg, Jpeg & Png)</p>
+                                                    <input type="text" id="text"
+                                                        class="form-control me-2 bg-white border-0 py-1 px-2 rounded"
+                                                        placeholder="D:\Projects\Labview\Logo work\photorealistic.png">
+                                                    <button class="btnmd  btn-lg w-100  mt-2 border-0 rounded">Load
+                                                        Picture</button>
+                                                    <button class="btnmd  btn-lg w-100  mt-2 border-0 rounded">Generate
+                                                        Report</button>
+                                                    <h3 class="mt-3"> Select Dimensions</h3>
+                                                    <div class="axis">
+                                                        <div class="row">
+                                                            <div class="col-lg-6">
+                                                                <h3>X-Axis</h3>
+                                                                <div class="form-group">
+                                                                    <input type="number" id="xAxisInput"
+                                                                        class="form-control w-100" value="0" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <h3>Y-Axis</h3>
+                                                                <div class="form-group">
+                                                                    <input type="number" id="yAxisInput"
+                                                                        class="form-control w-100" value="0" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 ">
+                                                                <div class="container bg-white scroll  mt-3">
+                                                                    <div class="row ">
+                                                                        <div class="col-lg-6 mt-2">
+                                                                            <label for="" style="font-size: 14px;">RAC
+                                                                                No.</label>
+                                                                            <input type="text" value="1"
+                                                                                class="text-center"
+                                                                                style="width: 36px; ">
+                                                                        </div>
+                                                                        <div class="col-lg-6  text-end  ">
+                                                                            <label for=""
+                                                                                style="font-size: 14px;">Color</label>
+                                                                            <input type="color" value="1"
+                                                                                style="width: 29px; ">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- end -->
+            </div>
+
+            <div class="col-lg-4 ">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 lasth2">
+                        <h2 class="h2 pb-1   ">Laser</h2>
+                        <div class="card blank-content border-0 py-1">
+                            <img src="img/Frame31.png" class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 lasth2">
+                        <h2 class="h2 pb-2">Audio</h2>
+                        <div class="card border-0">
+                            <img src="img/Frame31.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- last -->
+    <div class="container-fluid mt-5">
+        <div class="row last">
+            <div class="col-lg-12">
+                <div class="img"> <img src="img/Frame32.png" class="w-100 px-lg-5" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

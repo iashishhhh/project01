@@ -1,0 +1,26 @@
+@media screen and (min-device-width: 320px) and (max-device-width: 768px) {
+
+    .muted {
+        font-size: 9px;
+    }
+
+    .check span {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    .muted {
+        font-size: 9px;
+    }
+
+    .check span {
+        font-size: 12px;
+    }
+
+    #inputs h6 {
+        font-size: 9px;
+    }
+}
