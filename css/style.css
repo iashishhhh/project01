@@ -162,7 +162,12 @@ body {
 }
 
 .scroll {
-    overflow-y: scroll;
+    overflow: auto;
     height: 300px;
     scrollbar-width: thin;
+}
+.form-control1{
+    width: 36px;
+    height: 33px;
+    border: black 1px solid;
 }

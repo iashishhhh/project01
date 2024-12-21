@@ -165,6 +165,9 @@
                         </div>
                     </div>
                 </div>
+
+
+
                 <!-- Modal Trigger Button -->
                 <div class="headbtn2 bg-transparent">
                     <button type="button" class="btnhead2 btn-lg w-100 mt-1 rounded" data-bs-toggle="modal"
@@ -207,33 +210,34 @@
                                     </div>
                                     <div class="col-lg-6 col-md-12 col-sm-12">
                                         <div
-                                            class="btnd mt-2 pt-1 float-end d-flex justify-content-center align-items-center">
+                                            class="btnd mt-2 pt-1 float-end d-flex justify-content-center align-items-center gap-2 flex-wrap">
                                             <button
-                                                class="btn-lg btncol px-2 border-0 rounded me-lg-2 d-flex justify-content-center align-items-center">
+                                                class="btn-lg btncol px-3 py-2 border-0 rounded me-lg-2 d-flex justify-content-center align-items-center mb-2 mb-md-0">
                                                 <span><img src="img/formkit_start.png" class="mx-2 mb-1" alt=""></span>
                                                 Start Picture Analysis
                                             </button>
 
                                             <button
-                                                class="btn-lg px-2 rounded d-flex justify-content-center align-items-center"
+                                                class="btn-lg px-3 py-2 rounded d-flex justify-content-center align-items-center mb-2 mb-md-0"
                                                 id="btncol2">
-                                                <span><img src="img/material-symbols_stop-outline.png"
-                                                        class="mx-1   mb-1" alt=""></span>
+                                                <span><img src="img/material-symbols_stop-outline.png" class="mx-1 mb-1"
+                                                        alt=""></span>
                                                 Stop Picture Analysis
                                             </button>
                                         </div>
 
+
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-body">
-                                <div class="row">
-                                    <div class="col-lg-9">
+                            <div class="modal-body overflow-hidden">
+                                <div class="row g-4">
+                                    <div class="col-lg-9 overflow-hidden">
                                         <div class="canvas rounded"></div>
                                     </div>
-                                    <div class="col-lg-3">
+                                    <div class="col-lg-3 overflow-hidden">
                                         <div class="picture-path rounded">
-                                            <div class="card bg-transparent border-0">
+                                            <div class="card bg-transparent border-0 overflow-hidden ">
                                                 <div class="card-wrapper px-3 mt-3">
                                                     <h5 class="heading2">
                                                         Picture Path
@@ -266,24 +270,161 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-12 ">
-                                                                <div class="container bg-white scroll  mt-3">
+                                                                <div class="container bg-white scroll mt-3"
+                                                                    style="overflow-y: auto; max-height: 400px;">
                                                                     <div class="row ">
-                                                                        <div class="col-lg-6 mt-2">
-                                                                            <label for="" style="font-size: 14px;">RAC
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6  col-sm-6 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="mb-0"
+                                                                                style="font-size: 14px; margin-right: 10px; white-space: nowrap;">RAC
                                                                                 No.</label>
                                                                             <input type="text" value="1"
-                                                                                class="text-center"
-                                                                                style="width: 36px; ">
+                                                                                class="text-center form-control1 rounded">
                                                                         </div>
-                                                                        <div class="col-lg-6  text-end  ">
+                                                                        <!-- color input  -->
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6 col-sm-6 mt-3 d-flex align-items-center">
                                                                             <label for=""
-                                                                                style="font-size: 14px;">Color</label>
+                                                                                style="font-size: 14px; margin-right: 10px; white-space: nowrap;">Color</label>
                                                                             <input type="color" value="1"
-                                                                                style="width: 29px; ">
+                                                                                class="text-center form-control1 rounded ">
                                                                         </div>
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6  col-sm-6 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="mb-0"
+                                                                                style="font-size: 14px; margin-right: 10px; white-space: nowrap;">RAC
+                                                                                No.</label>
+                                                                            <input type="text" value="1"
+                                                                                class="text-center form-control1 rounded">
+                                                                        </div>
+                                                                        <!-- color input  -->
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6 col-sm-6 mt-3 d-flex align-items-center">
+                                                                            <label for=""
+                                                                                style="font-size: 14px; margin-right: 10px; white-space: nowrap;">Color</label>
+                                                                            <input type="color" value="1"
+                                                                                class="text-center form-control1 rounded ">
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6  col-sm-6 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="mb-0"
+                                                                                style="font-size: 14px; margin-right: 10px; white-space: nowrap;">RAC
+                                                                                No.</label>
+                                                                            <input type="text" value="1"
+                                                                                class="text-center form-control1 rounded">
+                                                                        </div>
+                                                                        <!-- color input  -->
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6 col-sm-6 mt-3 d-flex align-items-center">
+                                                                            <label for=""
+                                                                                style="font-size: 14px; margin-right: 10px; white-space: nowrap;">Color</label>
+                                                                            <input type="color" value="1"
+                                                                                class="text-center form-control1 rounded ">
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6  col-sm-6 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="mb-0"
+                                                                                style="font-size: 14px; margin-right: 10px; white-space: nowrap;">RAC
+                                                                                No.</label>
+                                                                            <input type="text" value="1"
+                                                                                class="text-center form-control1 rounded">
+                                                                        </div>
+                                                                        <!-- color input  -->
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6 col-sm-6 mt-3 d-flex align-items-center">
+                                                                            <label for=""
+                                                                                style="font-size: 14px; margin-right: 10px; white-space: nowrap;">Color</label>
+                                                                            <input type="color" value="#ff01ff"
+                                                                                class="text-center form-control1 rounded ">
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6  col-sm-6 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="mb-0"
+                                                                                style="font-size: 14px; margin-right: 10px; white-space: nowrap;">RAC
+                                                                                No.</label>
+                                                                            <input type="text" value="1"
+                                                                                class="text-center form-control1 rounded">
+                                                                        </div>
+                                                                        <!-- color input  -->
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6 col-sm-6 mt-3 d-flex align-items-center">
+                                                                            <label for=""
+                                                                                style="font-size: 14px; margin-right: 10px; white-space: nowrap;">Color</label>
+                                                                            <input type="color" value="1"
+                                                                                class="text-center form-control1 rounded ">
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6  col-sm-6 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="mb-0"
+                                                                                style="font-size: 14px; margin-right: 10px; white-space: nowrap;">RAC
+                                                                                No.</label>
+                                                                            <input type="text" value="1"
+                                                                                class="text-center form-control1 rounded">
+                                                                        </div>
+                                                                        <!-- color input  -->
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6 col-sm-6 mt-3 d-flex align-items-center">
+                                                                            <label for=""
+                                                                                style="font-size: 14px; margin-right: 10px; white-space: nowrap;">Color</label>
+                                                                            <input type="color" value="1"
+                                                                                class="text-center form-control1 rounded ">
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6  col-sm-6 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="mb-0"
+                                                                                style="font-size: 14px; margin-right: 10px; white-space: nowrap;">RAC
+                                                                                No.</label>
+                                                                            <input type="text" value="1"
+                                                                                class="text-center form-control1 rounded">
+                                                                        </div>
+                                                                        <!-- color input  -->
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6 col-sm-6 mt-3 d-flex align-items-center">
+                                                                            <label for=""
+                                                                                style="font-size: 14px; margin-right: 10px; white-space: nowrap;">Color</label>
+                                                                            <input type="color" value="1"
+                                                                                class="text-center form-control1 rounded ">
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6  col-sm-6 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="mb-0"
+                                                                                style="font-size: 14px; margin-right: 10px; white-space: nowrap;">RAC
+                                                                                No.</label>
+                                                                            <input type="text" value="1"
+                                                                                class="text-center form-control1 rounded">
+                                                                        </div>
+                                                                        <!-- color input  -->
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6 col-sm-6 mt-3 d-flex align-items-center">
+                                                                            <label for=""
+                                                                                style="font-size: 14px; margin-right: 10px; white-space: nowrap;">Color</label>
+                                                                            <input type="color" value="1"
+                                                                                class="text-center form-control1 rounded ">
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6  col-sm-6 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="mb-0"
+                                                                                style="font-size: 14px; margin-right: 10px; white-space: nowrap;">RAC
+                                                                                No.</label>
+                                                                            <input type="text" value="1"
+                                                                                class="text-center form-control1 rounded">
+                                                                        </div>
+                                                                        <!-- color input  -->
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6 col-sm-6 mt-3 d-flex align-items-center">
+                                                                            <label for=""
+                                                                                style="font-size: 14px; margin-right: 10px; white-space: nowrap;">Color</label>
+                                                                            <input type="color" value="1"
+                                                                                class="text-center form-control1 rounded ">
+                                                                        </div>
+
                                                                     </div>
                                                                 </div>
                                                             </div>
+
+
+
+                                                            <!-- modal body code end -->
                                                         </div>
 
                                                     </div>
